@@ -1,7 +1,12 @@
-* {
+body {
     background-color: black;
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.light-mode {
+    background-color: aliceblue;
+    color: black;
 }
 
 h1 {
@@ -42,4 +47,5 @@ td {
 button {
     display: block;
     margin: auto;
+    background-color: lightgrey;
 }
