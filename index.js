@@ -1,9 +1,14 @@
-document.querySelector("button").addEventListener("click", function () {
+document.getElementById("mode").addEventListener("click", function() {
+    document.body.style.background = "aliceblue";
+    document.body.style.color = "black";
+})
+
+document.getElementbyId("column").addEventListener("click", function () {
     var heads = prompt('What should we call the "Heads" column?');
     var tails = prompt('What should we call the "Tails" column?');
     document.getElementById("heads").textContent=heads;
     document.getElementById("tails").textContent=tails;
-});
+})
 
 document.getElementById("coin").addEventListener("click", function () {
     var flip = new Audio("images/Flip-Sound.mp3");
@@ -30,4 +35,4 @@ document.getElementById("coin").addEventListener("click", function () {
             document.getElementById("tails-score").innerText = newTailsScore;  
         }, 1000);
     }
-});
+})
